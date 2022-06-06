@@ -13,11 +13,9 @@ body {
 }
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin: 0 auto;
-
-  outline: 2px solid green;
 }
 .header .container {
   display: flex;
@@ -155,8 +153,8 @@ section {
   display: none;
 }
 .benefist-list {
-  display: block;
   display: flex;
+  padding-left: 0px;
 }
 .benefist-list .benefist-item {
   margin-right: 30px;
@@ -188,6 +186,7 @@ img {
 .case-list {
   display: flex;
   justify-content: space-between;
+  padding-left: 0px;
 }
 .case-item {
   margin-right: 30px;
@@ -215,6 +214,17 @@ img {
   letter-spacing: 0, 03em;
   color: var(--title-color);
 }
+.team-list {
+  display: flex;
+  padding-left: 0px;
+  justify-content: space-between;
+}
+.team-list .team-item {
+  margin-right: 30px;
+}
+.team-list .team-item:last-child {
+  margin-right: 0px;
+}
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -222,6 +232,8 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-text {
   font-weight: 400;
@@ -252,12 +264,30 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-logo {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.footer-list {
+  padding-left: 0px;
+}
 .footer {
   background-color: #2f303a;
 }
 /* -------portfolio--------- */
 
 /*-------------main--------- */
+.main-list {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+}
+.main-list .main-btn {
+  margin-right: 8px;
+}
+.main-list .main-btn:last-child {
+  margin-right: 0px;
+}
 .main-button {
   font-family: 'Roboto';
   font-weight: 500;
@@ -282,6 +312,23 @@ img {
   line-height: 1.2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+.project-list .project-item {
+  margin-right: 30px;
+}
+.project-list .project-item:last-child {
+  margin-right: 0px;
+}
+.project {
+  width: 370px;
+  padding: 20px 24px 20px 24px;
 }
 .project-text {
   font-weight: 400;
