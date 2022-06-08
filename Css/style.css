@@ -29,12 +29,15 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 /*--------------------- header*/
 
 .header {
   background-color: var(--background-color);
   padding: 0 px;
+  border: 1px solid #ececec;
 }
 .header-nav .link {
   display: block;
@@ -44,6 +47,7 @@ body {
 .header-logo {
   width: 145px;
   height: 31px;
+  margin-right: 93px;
 }
 .list {
   list-style: none;
@@ -59,6 +63,7 @@ body {
 }
 .header-items {
   display: flex;
+  margin-left: auto;
 }
 .header-items .header-item + .header-item {
   margin-left: 20px;
@@ -119,7 +124,6 @@ body {
 }
 .hero-section {
   background-color: #2f303a;
-  padding: 200px 200px;
 }
 .hero-text {
   display: block;
@@ -150,6 +154,7 @@ body {
   margin: 0px 700px 200px 700;
   display: block;
   margin: 0 auto;
+  border: 0px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -196,7 +201,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.case-section .section {
+.case-section.section {
   padding-top: 0px;
 }
 .case-list {
@@ -282,18 +287,17 @@ img {
 }
 .footer-logo {
   margin-bottom: 20px;
-  padding-top: 60px;
 }
-.footer-list {
-  padding-left: 0px;
-  padding-bottom: 60px;
-}
-.footer-list,
-.footer-item {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .footer {
   background-color: #2f303a;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.footer-list.list {
+  padding-left: 0px;
 }
 /* -------portfolio--------- */
 
@@ -343,9 +347,10 @@ img {
   flex-wrap: wrap;
 }
 .project-info {
+  width: calc((100%-60px) / 4);
   margin-right: 30px;
 }
-.project-info:nth-child(3n) {
+.project-info:nth-child(3) {
   margin-right: 0px;
 }
 
