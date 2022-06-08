@@ -13,8 +13,8 @@ body {
 }
 .container {
   width: 1200px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin: 0 auto;
 }
 .header .container {
@@ -22,12 +22,19 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
 /*--------------------- header*/
 
 .header {
   background-color: var(--background-color);
-  outline: 2px solid tomato;
-  padding: 24px 0;
+  padding: 0 px;
 }
 .header-nav .link {
   display: block;
@@ -47,6 +54,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin: 0px;
+  padding: 0px;
 }
 .header-items {
   display: flex;
@@ -104,13 +113,13 @@ body {
 .hero {
   outline: 2px solid green;
 }
-section {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .hero-section {
   background-color: #2f303a;
-  padding-top: 200px 452px;
+  padding: 200px 200px;
 }
 .hero-text {
   display: block;
@@ -129,7 +138,7 @@ section {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 88;
+  line-height: 1.88;
   display: flex;
   align-items: center;
   text-align: center;
@@ -154,7 +163,8 @@ section {
 }
 .benefist-list {
   display: flex;
-  padding-left: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 .benefist-list .benefist-item {
   margin-right: 30px;
@@ -169,6 +179,8 @@ section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .benefist-text {
   font-weight: 400;
@@ -176,6 +188,7 @@ section {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--contact-color);
+  margin: 0px;
 }
 /* --------case-section */
 img {
@@ -183,10 +196,14 @@ img {
   max-width: 100%;
   height: auto;
 }
+.case-section .section {
+  padding-top: 0px;
+}
 .case-list {
   display: flex;
   justify-content: space-between;
-  padding-left: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 .case-item {
   margin-right: 30px;
@@ -194,16 +211,9 @@ img {
 .case-item:last-child {
   margin-right: 0px;
 }
-.case-heading {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-}
 
-------team-section----- */ .team {
+/* ------team-section-----   */
+.team-section {
   background-color: #f5f4fa;
 }
 .team-heading {
@@ -216,7 +226,8 @@ img {
 }
 .team-list {
   display: flex;
-  padding-left: 0px;
+  padding: 0px;
+  margin: 0px;
   justify-content: space-between;
 }
 .team-list .team-item {
@@ -232,7 +243,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 .team-text {
@@ -242,12 +253,17 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--contact-color);
+  margin: 0px;
 }
 .team-item {
   background: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /* ----------footer-------------- */
 .footer-adress {
@@ -265,11 +281,16 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-logo {
-  margin-top: 60px;
   margin-bottom: 20px;
+  padding-top: 60px;
 }
 .footer-list {
   padding-left: 0px;
+  padding-bottom: 60px;
+}
+.footer-list,
+.footer-item {
+  margin-bottom: 9px;
 }
 .footer {
   background-color: #2f303a;
@@ -297,6 +318,8 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-color);
   cursor: pointer;
+  padding: 6px 22px;
+  border: 0;
 }
 .main-button:hover,
 .main-button:focus {
@@ -312,23 +335,24 @@ img {
   line-height: 1.2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+  margin-top: 0px;
+  margin-bottom: 4px;
 }
-
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0px;
 }
-
-.project-list .project-item {
+.project-info {
   margin-right: 30px;
 }
-.project-list .project-item:last-child {
+.project-info:nth-child(3n) {
   margin-right: 0px;
 }
+
 .project {
-  width: 370px;
   padding: 20px 24px 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 .project-text {
   font-weight: 400;
@@ -336,6 +360,7 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--contact-color);
+  margin: 0px;
 }
 .project-list {
   background-color: var(--background-color);
